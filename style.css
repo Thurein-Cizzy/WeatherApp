@@ -11,10 +11,11 @@ body {
 .card {
   width: 80%;
   min-height: 500px;
-  min-width: 450px;
+  min-width: 430px;
   border-radius: 15px;
   margin: 3vh auto;
   background-color: #413f54;
+  padding: 15px;
 }
 
 .wrapper {
@@ -30,43 +31,49 @@ body {
   width: 50%;
   min-width: 450px;
   height: 10vh;
-  background-color: red;
   display: flex;
 }
 
 .logo-holder {
-  width: 20%;
+  width: 15%;
   height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: sans-serif;
   font-size: 20pt;
   color: white;
-  text-align: center;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-holder img {
+  width: 50px;
+  height: 50px;
 }
 
 .app-name {
   width: 80%;
   height: 100%;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: sans-serif;
   font-size: 1.5rem;
   color: white;
   text-align: start;
   align-content: center;
   user-select: none;
+  font-weight: bold;
 }
 .container-search-group {
   flex-grow: 1;
   width: 50%;
   min-width: 450px;
   height: 10vh;
-  background-color: blue;
+  /* background-color: blue; */
 
   display: flex;
 }
 .search-group {
   width: 85%;
   height: 100%;
-  background-color: pink;
+  /* background-color: pink; */
 
   display: flex;
   align-items: center;
@@ -74,35 +81,69 @@ body {
 }
 
 #city-name-input {
-  width: 60%;
-  height: 65%;
+  width: 70%;
+  height: 55%;
   outline: none;
   border: none;
-  background-color: rgb(184, 205, 223);
+  background-color: rgb(241, 249, 255);
+  padding: 2px 20px;
+  color: #3e3c4d;
 }
 
 #search-button {
-  width: 50px;
-  height: 60%;
-  background-color: rgb(184, 205, 223);
+  width: 13%;
+  height: 55%;
+  background-color: rgb(241, 249, 255);
   border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-button svg {
+  fill: rgb(51, 48, 48);
+  width: 16px;
+  height: 16px;
+}
+
+#search-button svg:hover path {
+  fill: rgb(139, 31, 31);
+  transform: scale(1.07);
 }
 
 .map-holder {
   width: 15%;
   height: 100%;
-  background-color: yellow;
-  align-content: center;
-  text-align: center;
+  /* background-color: yellow; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #map-button {
   width: 45px;
   height: 45px;
-  background-color: aqua;
+  background-color: #355691;
   border-radius: 50%;
   outline: none;
   border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#map-button:hover {
+  background-color: #3e65a9;
+  transform: translateY(-2px);
+}
+
+#map-button svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
 }
 
 @media (max-width: 1000px) {
@@ -116,5 +157,15 @@ body {
 
   .search-group {
     justify-content: center;
+    width: 80%;
+  }
+
+  #city-name-input {
+    width: 80%;
+  }
+
+  .map-holder {
+    width: 20%;
+    justify-content: start;
   }
 }
