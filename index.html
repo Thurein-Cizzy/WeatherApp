@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./Weather Icons/svg_style.css" />
   </head>
   <body>
     <div class="card">
+      <!-- nav bar -->
       <div class="wrapper">
         <div class="container-logo">
           <div class="logo-holder">
@@ -44,6 +46,46 @@
             </button>
           </div>
         </div>
+      </div>
+      <!-- body  -->
+      <div class="container-body">
+        <!-- card for current time weather details -->
+        <div class="current-card">
+          <div class="current-time">3 May - 10:19 PM</div>
+          <div class="weather-icon">
+            <!-- Weather icon svg -->
+            <img src="./images/weather-images/sun.png" />
+          </div>
+          <div class="temp-display">25 C / Cloudy</div>
+          <div class="current-table">
+            <div class="current-weather-cell flex-j-end">
+              <img src="./images/weather-images/wind.png" />
+              <div>35/ KMH</div>
+            </div>
+            <div class="current-weather-cell">
+              <img src="./images/weather-images/wind.png" />
+              <div>35/ KMH</div>
+            </div>
+            <div class="current-weather-cell flex-j-end">
+              <img src="./images/weather-images/wind.png" />
+              <div>35/ KMH</div>
+            </div>
+            <div class="current-weather-cell">
+              <img src="./images/weather-images/wind.png" />
+              <div>35/ KMH</div>
+            </div>
+            <div class="current-weather-cell flex-j-end">
+              <img src="./images/weather-images/wind.png" />
+              <div>35/ KMH</div>
+            </div>
+            <div class="current-weather-cell">
+              <img src="./images/weather-images/wind.png" />
+              <div>35/ KMH</div>
+            </div>
+          </div>
+        </div>
+        <!-- card for other days -->
+        <div class="other-day-card"></div>
       </div>
     </div>
 
